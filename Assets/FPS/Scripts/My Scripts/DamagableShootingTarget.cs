@@ -12,7 +12,7 @@ namespace AG3953
 
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private void Start()
         {
             objectRenderer = GetComponent<Renderer>();
             originalColor = objectRenderer.material.color;
@@ -28,11 +28,22 @@ namespace AG3953
         {
             base.InflictDamage(damage, isExplosionDamage, damageSource);
 
-            SwapColour();
+            SwapColor();
          
         }
-
-
+        
+        public void SwapColor()
+        {
+            if (!colorSwapped )
+            {
+                objectRenderer.material.color = swapColor;
+            }
+            else
+            {
+                objectRenderer.material.color = originalColor;
+            }
+            colorSwapped = !colorSwapped;
+        }
 
         private void OnDisable()
         {
