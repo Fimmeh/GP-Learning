@@ -836,6 +836,24 @@ MonoBehaviour:
   - {fileID: 111727470}
   - {fileID: 1959554914}
   speed: 1
+--- !u!114 &1472928518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472928516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063bad4506810418e11a42801d2abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageMultiplier: 1
+  SensibilityToSelfdamage: 0.5
+  objectRenderer: {fileID: 0}
+  swapColor: {r: 1, g: 0, b: 0, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  colorSwapped: 0
 --- !u!4 &1509322689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7126834695521861993, guid: 37ff5dafe824cb045a19f983787808dd,
@@ -1011,6 +1029,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1472928517}
+    - targetCorrespondingSourceObject: {fileID: 7522586707983532515, guid: 8e7a206a9b9eb4c469f2db91fb77f62c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472928518}
   m_SourcePrefab: {fileID: 100100000, guid: 8e7a206a9b9eb4c469f2db91fb77f62c, type: 3}
 --- !u!1001 &1697119409
 PrefabInstance:

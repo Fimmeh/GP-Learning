@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace AG3953
 {
-    /*public class DamagableShootingTarget : Damageable
+    public class DamagableShootingTarget : Damageable
     {
         public Renderer objectRenderer;
         public Color swapColor = Color.red;
@@ -49,6 +49,6 @@ namespace AG3953
         {
             objectRenderer.material.color = originalColor;
         }
-    } */
+    } 
 
 }
