@@ -325,6 +325,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 129884175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &167937243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167937245}
+  - component: {fileID: 167937244}
+  - component: {fileID: 167937246}
+  m_Layer: 0
+  m_Name: ThingFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &167937244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167937243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d387c255d4d6b9d438d45966238ebc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetForDragNDropWay: {fileID: 550777983}
+  targetForNameFinding: {fileID: 0}
+  targetForTagFinding: {fileID: 0}
+  targetForTypeFinding: {fileID: 0}
+  targetForGetComponentFinding: {fileID: 0}
+  targetForGetComponentInChildrenFinding: {fileID: 0}
+--- !u!4 &167937245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167937243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.594193, y: 3.357266, z: 7.269949}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1876980680}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167937246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167937243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53519ed1dc7bbf4f92b0afcb598b92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &226431211
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +677,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 129884175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &550777983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7253983127304857660, guid: 761cdc9e4e883334cbdcea062d0befa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1522764262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &568953350
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +726,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 839449251}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &605667259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605667251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53519ed1dc7bbf4f92b0afcb598b92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612734236
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,10 +1016,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pop-Up Target (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422894888600201782, guid: 3a0eea90dc13b314a88c7b36239aa287,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8422894888600201782, guid: 3a0eea90dc13b314a88c7b36239aa287,
+        type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 605667259}
   m_SourcePrefab: {fileID: 100100000, guid: 3a0eea90dc13b314a88c7b36239aa287, type: 3}
 --- !u!1 &913358636
 GameObject:
@@ -949,6 +1040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 913358638}
   - component: {fileID: 913358637}
+  - component: {fileID: 913358639}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1036,6 +1128,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &913358639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913358636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &955958525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1814,6 +1929,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pop-Up Target (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422894888600201782, guid: 3a0eea90dc13b314a88c7b36239aa287,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2084,6 +2204,7 @@ GameObject:
   - component: {fileID: 1871448012}
   - component: {fileID: 1871448011}
   - component: {fileID: 1871448010}
+  - component: {fileID: 1871448015}
   m_Layer: 0
   m_Name: SpeedDemon
   m_TagString: Untagged
@@ -2230,12 +2351,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871448008}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1871448015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871448008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53519ed1dc7bbf4f92b0afcb598b92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1871937344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4477206535605542485, guid: 2954f5c29859c9d448513c8bd60b3344,
     type: 3}
   m_PrefabInstance: {fileID: 25244485}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1876980679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1876980680}
+  - component: {fileID: 1876980681}
+  m_Layer: 0
+  m_Name: ChildThingFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1876980680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876980679}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 167937245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1876980681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876980679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53519ed1dc7bbf4f92b0afcb598b92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1959554913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,6 +2643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pop-Up Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8422894888600201782, guid: 3a0eea90dc13b314a88c7b36239aa287,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2550,3 +2732,4 @@ SceneRoots:
   - {fileID: 129884175}
   - {fileID: 1399277945}
   - {fileID: 1791596110}
+  - {fileID: 167937245}
