@@ -5,7 +5,7 @@ namespace AG3953
     public class ActivateShootingRange : MonoBehaviour
     {
 
-        public GameObject []popUpTargets;
+        [SerializeField] GameObject []popUpTargets;
         
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +25,12 @@ namespace AG3953
 
         public void ActivateAllObjects()
         {
+            if (popUpTargets == null || popUpTargets.Length == 0)
+            {
+                Debug.LogWarning("No targets assigned to ActivateShootingRange");
+                return;
+            }
+
             foreach (var obj in popUpTargets)
             {
                 if (obj != null)
@@ -36,12 +42,12 @@ namespace AG3953
                     }
                     else
                     {
-                        Debug.LogWarning("Nothing attached");
+                        Debug.LogWarning($"Object '{obj.name}' is missing the ShootingTarget script");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning("Object in array is null");
+                    Debug.LogWarning("Object in popUpTargets array is null");
                 }
             }
         }

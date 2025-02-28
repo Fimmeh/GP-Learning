@@ -14,7 +14,11 @@ namespace AG3953
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         private void Start()
         {
-            objectRenderer = GetComponent<Renderer>();
+            if (objectRenderer == null)
+            {
+                objectRenderer = GetComponent<Renderer>();
+            }
+            
             originalColor = objectRenderer.material.color;
         }
 
