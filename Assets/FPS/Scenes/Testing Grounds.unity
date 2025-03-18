@@ -989,6 +989,7 @@ GameObject:
   - component: {fileID: 738642527}
   - component: {fileID: 738642526}
   - component: {fileID: 738642525}
+  - component: {fileID: 738642528}
   m_Layer: 0
   m_Name: GoodSpectator
   m_TagString: Untagged
@@ -1087,6 +1088,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738642523}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &738642528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738642523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643820fb399a9cb49ba6dfa8a0e9b0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &824570422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2081,6 +2094,7 @@ GameObject:
   - component: {fileID: 1289654764}
   - component: {fileID: 1289654763}
   - component: {fileID: 1289654762}
+  - component: {fileID: 1289654765}
   m_Layer: 0
   m_Name: BadSpectator
   m_TagString: Untagged
@@ -2179,6 +2193,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289654760}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1289654765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289654760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004e64c15e5f1a9418897c6e6cd7ddc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1374340282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8422894888600201782, guid: 3a0eea90dc13b314a88c7b36239aa287,

@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
-public class BadSpectator : Character
+namespace AG3953
 {
-    public override void Cheer()
-    {
-
-    }
+	public class BadSpectator : Character
+	{
+        public override void Cheer()
+        {
+            base.Cheer();
+            Debug.Log("Okay, I guess");
+        }
+    } 
 }
