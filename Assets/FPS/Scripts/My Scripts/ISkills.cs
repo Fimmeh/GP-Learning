@@ -1,4 +1,5 @@
-﻿namespace AG3953
+﻿
+namespace AG3953
 {
     internal interface ISkills
     {
