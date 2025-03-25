@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace AG3953
@@ -9,18 +10,34 @@ namespace AG3953
             if (Input.GetKeyDown(KeyCode.U))
             {
                 Cheer();
+                Jump();
+            }
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                Boo();               
+            }
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                Neutral();
             }
         }
 
+
         public virtual void Cheer()
         {
-            Debug.Log("Yippee, way to go!");
+            
         }
 
         public virtual void Boo()
         {
-            Debug.Log("You suck!");
+            
         }
-    }
 
+        public void Neutral()
+        {
+            Debug.Log("Neutral noices");
+        }
+
+        public abstract void Jump();
+    }
 }
