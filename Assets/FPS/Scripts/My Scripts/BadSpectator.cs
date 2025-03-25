@@ -23,7 +23,7 @@ namespace AG3953
             transform.position = startPosition;
         }
 
-        public new void Neutral()
+        public override void Neutral()
         {
             base.Neutral();
         }

@@ -33,7 +33,7 @@ namespace AG3953
             
         }
 
-        public void Neutral()
+        public virtual void Neutral()
         {
             Debug.Log("Neutral noices");
         }
