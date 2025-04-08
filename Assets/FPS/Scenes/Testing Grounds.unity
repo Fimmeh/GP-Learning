@@ -1755,7 +1755,7 @@ PrefabInstance:
     - target: {fileID: 4477084100537825518, guid: 3e1dd0ea23e4fde4988edf3207e53029,
         type: 3}
       propertyPath: m_Name
-      value: Wall_1m
+      value: WallRunningWall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2440,6 +2440,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1522764262}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &1522764268 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 3122855503829242450, guid: 761cdc9e4e883334cbdcea062d0befa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1522764262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1525690594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2829,8 +2835,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3169508, y: 1.0047355, z: 2.976405}
-  m_Center: {x: -0.39991045, y: 0.49573177, z: 1.5147818}
+  m_Size: {x: 1.3169508, y: 1.0047356, z: 1.8634131}
+  m_Center: {x: -0.39991045, y: 0.49573177, z: 0.9304868}
 --- !u!114 &1721049933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,10 +2849,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f96dd72dd570645a8be364a2ea86cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 1522764268}
   cameraTransform: {fileID: 1038764313}
-  isRunning: 0
   tiltAngle: 15
-  pointA: {fileID: 1528392197}
+  player: {fileID: 550777983}
+  isRunning: 0
 --- !u!1 &1791596109
 GameObject:
   m_ObjectHideFlags: 0
