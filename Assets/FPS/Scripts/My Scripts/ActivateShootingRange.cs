@@ -4,22 +4,20 @@ namespace AG3953
 {
     public class ActivateShootingRange : MonoBehaviour
     {
-
-        [SerializeField] GameObject []popUpTargets;
-        
+        [SerializeField] GameObject[] popUpTargets;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         public void Start()
         {
-            
         }
 
         // Update is called once per frame
         public void Update()
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 ActivateAllObjects();
+                ShootingRangeGameManager.Instance.StartGame();  // Start the game when E is pressed
             }
         }
 
@@ -51,5 +49,5 @@ namespace AG3953
                 }
             }
         }
-    } 
+    }
 }
